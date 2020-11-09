@@ -66,5 +66,5 @@
     This deploys the operators, etc.  AMQ Broker, Fuse Online are per-project.  All others are shared.
 
     ```sh
-    ansible-playbook Deploy_Groups.yml
+    ansible-playbook Deploy_Advanced_Course.yml
     ```
