@@ -36,10 +36,9 @@ workshop_manifests:
         title: OpenShift Service Mesh
       - id: serverlessserving
         title: OpenShift Serverless Serving
-  - id: innovation
-    title: Optional Camel K Comprehension
-    labs:
       - id: camelkocpserverlesseventing
-        title: Camel K and OpenShift Serverless Eventing
+        title: (Optional) Camel K and OpenShift Serverless Eventing
       - id: camelkocpserverlessservice
-        title: Camel K and OpenShift Serverless Serving
+        title: (Optional) Camel K and OpenShift Serverless Serving
+      - id: permissions
+        title: Role-Based Access Control

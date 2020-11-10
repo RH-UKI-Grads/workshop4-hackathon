@@ -11,6 +11,8 @@ Throughout this lab you’ll discover how Quarkus can make your development of c
 
 ==== Setting up your workspace environment
 
+Prerequisite: You must be using a Chrome or Firefox web browser.
+
 To get started, open the link:http://codeready-crw.apps.cluster-3e21.3e21.example.opentlc.com/[CodeReady URL, window="_blank"]
 
 TIP: You may be asked to authorize access. If so, ensure the box to give your user full permissions is checked then select `Allow selected permissions` to continue.
@@ -23,11 +25,9 @@ Username: {{USER_ID}}
 Email: {{USER_ID}}@example.com
 First name: {{USER_ID}}
 Last name: {{USER_ID}}
-Password: openshift
-Confirm password: openshift
 ----
 
-Once you log in with your username and password, you will be placed on the Get Started page. It gives you a view of the different projects that you can create or pre-configure.
+Once you log in with your username and password, you will be placed on the Get Started page. It gives you a view of the different projects that you can create create or pre-configure.
 
 You will now create a Quarkus workspace to use. Select the `Custom Workspace` tab.
 
@@ -604,9 +604,9 @@ Then, add
 
 to the end of the URL to access the Swagger UI and play with your API.
 
-Using the UI, expand the `/hello/greeting/{name}` endpoint. Here you can observe basic detail about the endpoint: the name of the endpoint, parameters and their type, and the response type one can expect.
+Using the UI, expand the `/hello/greeting/{name}` endpoint. Here you can basic detail about the endpoint: the name of the endpoint, parameters and their type, and the response type one can expect.
 
-Click the `Try it out` button to expand the box allowing you to try it. Enter openshift into the name field and click Execute:
+Click the `Try it out` button to expand the box allowing you to try it. Enter any openshift into the name field and click Execute:
 
 
 image::quarkus-11.png[Name input in Swagger UI]
