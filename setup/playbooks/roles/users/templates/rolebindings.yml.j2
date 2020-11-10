@@ -22,7 +22,7 @@ kind: RoleBinding
 metadata:
   creationTimestamp: null
   name: admin
-  namespace: {{ item.name }}-infra
+  namespace: {{ item.name }}-apps
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
