@@ -11,7 +11,7 @@
 
 ## Set up the cluster
 
-1. Edit `setup/playbooks/group_vars/all/cluster` with token & URL information from the cluster that was set up.
+1. Copy `setup/playbooks/group_vars/all/cluster.yml.template` sideways to `cluster.yml`, then edit this new file, embedding token & URL information from the cluster that was set up.
 
 1. (OPTIONAL) Install OpenShift Container Storage
 
