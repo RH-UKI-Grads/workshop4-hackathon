@@ -13,6 +13,14 @@
 
 1. Edit `setup/playbooks/group_vars/all/cluster` with token & URL information from the cluster that was set up.
 
+1. (OPTIONAL) Install OpenShift Container Storage
+
+    * You must have at least 3 16 vCPU nodes in the cluster to support OCS.  Remember that it will consume a significant quantity of CPU and memory - you will be best served by dedicating an extra three nodes.
+
+    * Follow the instructions here https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.5/html/deploying_openshift_container_storage_using_amazon_web_services/deploy-using-dynamic-storage-devices-aws to install the operator and create a storage cluster.
+
+    * Update the storage classes, so that the new OCS storage class is the default.
+
 1. Deploy the Devex lab docs
 
     * Execute shell commands:
