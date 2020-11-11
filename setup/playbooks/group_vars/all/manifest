@@ -21,12 +21,12 @@ workshop_manifests:
         name: Understanding the Software Defined Network
       - id: pvs
         name: Understanding Persistent Volumes
+      - id: rbac
+        name: The RBAC model for Developers
       - id: healthprobes
         name: Pod Health Probes
       - id: metrics
         name: Introduction to Metrics and Logging in OpenShift
-      - id: rbac
-        name: The RBAC model for Developers
   - id: innovation
     title: Tech Talks
     labs:
@@ -40,5 +40,3 @@ workshop_manifests:
         title: (Optional) Camel K and OpenShift Serverless Eventing
       - id: camelkocpserverlessservice
         title: (Optional) Camel K and OpenShift Serverless Serving
-      - id: permissions
-        title: Role-Based Access Control
