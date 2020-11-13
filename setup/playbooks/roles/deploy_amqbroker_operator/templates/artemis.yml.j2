@@ -6,11 +6,11 @@ metadata:
   namespace: {{ item.name }}
 spec:
   acceptors:
-    - expose: true
+    - expose: false
       name: amqp
       port: 5672
       protocols: 'true'
-    - expose: true
+    - expose: false
       name: openwire
       port: 61616
       protocols: 'true'
