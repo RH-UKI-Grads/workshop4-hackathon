@@ -1,0 +1,26 @@
+---
+- hosts: localhost
+
+  roles: 
+    - login_ocp
+
+  tasks:
+
+    - name: Create dumps directory (uncommitted)
+      file: 
+        path: "{{ playbook_dir }}/dumps"
+        state: directory
+
+    - name: Gather team project dumps
+      command: "oc get -o yaml all --export=true -n {{ item }}"
+      # debug: "{{ item }}"
+      with_items: 
+        - "{{ labs_teams | map(attribute='name') | list }}"
+        - "{{ labs_teams | map(attribute='name') | map('regex_replace', '(.+)', '\\1-apps') | list }}"
+      register: dump
+
+    - name: Write team project dumps to files
+      copy:
+        content: "{{ item.stdout }}"
+        dest: "{{ playbook_dir }}/dumps/{{ item.item }}.yml"
+      loop: "{{ dump.results }}"
