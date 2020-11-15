@@ -76,3 +76,14 @@
     ```sh
     ansible-playbook Deploy_Advanced_Course.yml
     ```
+
+## Archiving work
+
+* Dump the teamX, teamX-apps namespaces:
+
+    ```sh
+    ansible-playbook Dump_Team_Projects.yml
+    ```
+
+* Grab the `teamX*.yml` files from `playbooks/dumps`.
+

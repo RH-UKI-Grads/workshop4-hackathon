@@ -13,7 +13,7 @@
 
     - name: Gather team project dumps
       command: "oc get -o yaml all --export=true -n {{ item }}"
-      # debug: "{{ item }}"
+      no_log: true
       with_items: 
         - "{{ labs_teams | map(attribute='name') | list }}"
         - "{{ labs_teams | map(attribute='name') | map('regex_replace', '(.+)', '\\1-apps') | list }}"
