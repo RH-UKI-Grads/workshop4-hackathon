@@ -1,6 +1,6 @@
 workshop_manifests:
-  - id: intro
-    title: Introduction and Setup
+  - id: innovation
+    title: Tech Talk Workshops
     labs:
       - id: intro
         title: Introduction
@@ -8,9 +8,6 @@ workshop_manifests:
         title: Workshop Pre-requisites
       - id: introductiontooc
         title: Introduction to 'oc'
-  - id: essentials
-    title: OpenShift Essentials
-    labs:
       - id: applicationbasics
         title: Application Basics
       - id: deployments
@@ -27,9 +24,6 @@ workshop_manifests:
         name: Pod Health Probes
       - id: metrics
         name: Introduction to Metrics and Logging in OpenShift
-  - id: innovation
-    title: Tech Talks
-    labs:
       - id: camelk
         title: Camel K on OpenShift
       - id: servicemesh
