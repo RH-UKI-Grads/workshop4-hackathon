@@ -9,3 +9,6 @@ target/
 # Don't commit the cluster file, but commit the template
 /setup/playbooks/group_vars/all/cluster*
 !/setup/playbooks/group_vars/all/cluster.yml.template
+
+# Don't commit any dumps from a specific instance
+/setup/playbooks/dumps
