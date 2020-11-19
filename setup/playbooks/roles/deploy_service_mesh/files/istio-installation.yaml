@@ -48,4 +48,4 @@ spec:
     tracing:
       enabled: true
       jaeger:
-        template: all-in-one 
+        template: all-in-one
